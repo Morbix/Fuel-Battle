@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import Mixpanel
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        _ = Mixpanel.sharedInstanceWithToken(Key.mixpanel)
+        
+        _ = OneSignal(launchOptions: launchOptions, appId: Key.onesignal, handleNotification: nil)
+        
+        FIRApp.configure()
+        
         return true
     }
 

@@ -16,6 +16,7 @@
 		2D2B5D241CF0F9B000F801C8 /* FuelBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D231CF0F9B000F801C8 /* FuelBattleTests.swift */; };
 		2D2B5D2F1CF0F9B000F801C8 /* FuelBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */; };
 		2D2B5D3D1CF0FD8900F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */; };
+		2D2B5D3F1CF1060800F801C8 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D3E1CF1060800F801C8 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,9 @@
 		2D2B5D2A1CF0F9B000F801C8 /* FuelBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelBattleUITests.swift; sourceTree = "<group>"; };
 		2D2B5D301CF0F9B000F801C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../Submodules/Fuel-Battle-Keys/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D2B5D3E1CF1060800F801C8 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = "../Submodules/Fuel-Battle-Keys/Key.swift"; sourceTree = "<group>"; };
+		2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuelBattle-Bridging-Header.h"; sourceTree = "<group>"; };
 		60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +90,7 @@
 				2D2B5D0D1CF0F9AF00F801C8 /* FuelBattle */,
 				2D2B5D221CF0F9B000F801C8 /* FuelBattleTests */,
 				2D2B5D2D1CF0F9B000F801C8 /* FuelBattleUITests */,
+				2D2B5D401CF1069500F801C8 /* Fuel-Battle-Keys */,
 				2D2B5D0C1CF0F9AF00F801C8 /* Products */,
 				38ED63D6A59E7877EBE14859 /* Pods */,
 				7FC7A9A2E4BEF8E730D7F4E4 /* Frameworks */,
@@ -112,7 +116,7 @@
 				2D2B5D151CF0F9AF00F801C8 /* Assets.xcassets */,
 				2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */,
 				2D2B5D1A1CF0F9AF00F801C8 /* Info.plist */,
-				2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */,
+				2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */,
 			);
 			path = FuelBattle;
 			sourceTree = "<group>";
@@ -133,6 +137,16 @@
 				2D2B5D301CF0F9B000F801C8 /* Info.plist */,
 			);
 			path = FuelBattleUITests;
+			sourceTree = "<group>";
+		};
+		2D2B5D401CF1069500F801C8 /* Fuel-Battle-Keys */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */,
+				2D2B5D3E1CF1060800F801C8 /* Key.swift */,
+			);
+			name = "Fuel-Battle-Keys";
+			path = FuelBattle;
 			sourceTree = "<group>";
 		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
@@ -223,6 +237,15 @@
 				TargetAttributes = {
 					2D2B5D0A1CF0F9AF00F801C8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U4D7MD5WUL;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D2B5D1E1CF0F9B000F801C8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -337,6 +360,7 @@
 			files = (
 				2D2B5D111CF0F9AF00F801C8 /* ViewController.swift in Sources */,
 				2D2B5D0F1CF0F9AF00F801C8 /* AppDelegate.swift in Sources */,
+				2D2B5D3F1CF1060800F801C8 /* Key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,11 +505,14 @@
 			baseConfigurationReference = 60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuelBattle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.cleberhenriques.FuelBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuelBattle/FuelBattle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -494,11 +521,13 @@
 			baseConfigurationReference = BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuelBattle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.cleberhenriques.FuelBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuelBattle/FuelBattle-Bridging-Header.h";
 			};
 			name = Release;
 		};
