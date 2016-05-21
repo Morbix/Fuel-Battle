@@ -90,7 +90,7 @@
 				2D2B5D0D1CF0F9AF00F801C8 /* FuelBattle */,
 				2D2B5D221CF0F9B000F801C8 /* FuelBattleTests */,
 				2D2B5D2D1CF0F9B000F801C8 /* FuelBattleUITests */,
-				2D2B5D4C1CF10EE000F801C8 /* Fuel-Battle-Keys */,
+				2D2B5D511CF10F3700F801C8 /* Submodules */,
 				2D2B5D0C1CF0F9AF00F801C8 /* Products */,
 				38ED63D6A59E7877EBE14859 /* Pods */,
 				7FC7A9A2E4BEF8E730D7F4E4 /* Frameworks */,
@@ -147,6 +147,14 @@
 			);
 			name = "Fuel-Battle-Keys";
 			path = "Submodules/Fuel-Battle-Keys";
+			sourceTree = "<group>";
+		};
+		2D2B5D511CF10F3700F801C8 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B5D4C1CF10EE000F801C8 /* Fuel-Battle-Keys */,
+			);
+			name = Submodules;
 			sourceTree = "<group>";
 		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
