@@ -15,8 +15,8 @@
 		2D2B5D191CF0F9AF00F801C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */; };
 		2D2B5D241CF0F9B000F801C8 /* FuelBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D231CF0F9B000F801C8 /* FuelBattleTests.swift */; };
 		2D2B5D2F1CF0F9B000F801C8 /* FuelBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */; };
-		2D2B5D3D1CF0FD8900F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */; };
-		2D2B5D3F1CF1060800F801C8 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D3E1CF1060800F801C8 /* Key.swift */; };
+		2D2B5D4F1CF10EE000F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */; };
+		2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4E1CF10EE000F801C8 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +51,9 @@
 		2D2B5D2A1CF0F9B000F801C8 /* FuelBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelBattleUITests.swift; sourceTree = "<group>"; };
 		2D2B5D301CF0F9B000F801C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../Submodules/Fuel-Battle-Keys/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2D2B5D3E1CF1060800F801C8 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = "../Submodules/Fuel-Battle-Keys/Key.swift"; sourceTree = "<group>"; };
 		2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuelBattle-Bridging-Header.h"; sourceTree = "<group>"; };
+		2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D2B5D4E1CF10EE000F801C8 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +90,7 @@
 				2D2B5D0D1CF0F9AF00F801C8 /* FuelBattle */,
 				2D2B5D221CF0F9B000F801C8 /* FuelBattleTests */,
 				2D2B5D2D1CF0F9B000F801C8 /* FuelBattleUITests */,
-				2D2B5D401CF1069500F801C8 /* Fuel-Battle-Keys */,
+				2D2B5D4C1CF10EE000F801C8 /* Fuel-Battle-Keys */,
 				2D2B5D0C1CF0F9AF00F801C8 /* Products */,
 				38ED63D6A59E7877EBE14859 /* Pods */,
 				7FC7A9A2E4BEF8E730D7F4E4 /* Frameworks */,
@@ -139,14 +139,14 @@
 			path = FuelBattleUITests;
 			sourceTree = "<group>";
 		};
-		2D2B5D401CF1069500F801C8 /* Fuel-Battle-Keys */ = {
+		2D2B5D4C1CF10EE000F801C8 /* Fuel-Battle-Keys */ = {
 			isa = PBXGroup;
 			children = (
-				2D2B5D3C1CF0FD8900F801C8 /* GoogleService-Info.plist */,
-				2D2B5D3E1CF1060800F801C8 /* Key.swift */,
+				2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */,
+				2D2B5D4E1CF10EE000F801C8 /* Key.swift */,
 			);
 			name = "Fuel-Battle-Keys";
-			path = FuelBattle;
+			path = "Submodules/Fuel-Battle-Keys";
 			sourceTree = "<group>";
 		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2B5D191CF0F9AF00F801C8 /* LaunchScreen.storyboard in Resources */,
-				2D2B5D3D1CF0FD8900F801C8 /* GoogleService-Info.plist in Resources */,
+				2D2B5D4F1CF10EE000F801C8 /* GoogleService-Info.plist in Resources */,
 				2D2B5D161CF0F9AF00F801C8 /* Assets.xcassets in Resources */,
 				2D2B5D141CF0F9AF00F801C8 /* Main.storyboard in Resources */,
 			);
@@ -360,7 +360,7 @@
 			files = (
 				2D2B5D111CF0F9AF00F801C8 /* ViewController.swift in Sources */,
 				2D2B5D0F1CF0F9AF00F801C8 /* AppDelegate.swift in Sources */,
-				2D2B5D3F1CF1060800F801C8 /* Key.swift in Sources */,
+				2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
