@@ -26,8 +26,8 @@ class MainTabBarViewController: UITabBarController {
         tabBar.translucent = false
         
         let items = [
-            Item(title: R.string.localizable.averages(), image: imageForTab(R.image.battleGray()), selectedImage: imageForTab(R.image.battleOrange()), viewController: getInitialHomeScreen()),
-            Item(title: R.string.localizable.garage(), image: imageForTab(R.image.carGray()), selectedImage: imageForTab(R.image.carOrange()), viewController: UIViewController()),
+            Item(title: R.string.localizable.averages(), image: imageForTab(R.image.battleGray()), selectedImage: imageForTab(R.image.battleOrange()), viewController: averagesScreen()),
+            Item(title: R.string.localizable.garage(), image: imageForTab(R.image.carGray()), selectedImage: imageForTab(R.image.carOrange()), viewController: garageScreen()),
         ]
         
         self.setViewControllers(items.map { $0.viewController }, animated: false)
@@ -52,8 +52,12 @@ class MainTabBarViewController: UITabBarController {
         return image.imageWithRenderingMode(.AlwaysOriginal)
     }
     
-    final private func getInitialHomeScreen() -> UIViewController {
+    final private func averagesScreen() -> UIViewController {
         return BaseNavigationViewController(rootViewController: AveragesViewController())
+    }
+    
+    final private func garageScreen() -> UIViewController {
+        return BaseNavigationViewController(rootViewController: GarageViewController())
     }
     
 }
