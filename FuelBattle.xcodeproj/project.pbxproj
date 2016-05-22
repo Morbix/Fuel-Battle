@@ -72,6 +72,8 @@
 		2DC87A771CF263AF00243800 /* EditAverageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87A751CF263AF00243800 /* EditAverageViewController.swift */; };
 		2DC87A791CF263E800243800 /* EditAverage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87A781CF263E800243800 /* EditAverage.storyboard */; };
 		2DC87A7A1CF263E800243800 /* EditAverage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87A781CF263E800243800 /* EditAverage.storyboard */; };
+		2DC87A7C1CF26B9600243800 /* CarsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87A7B1CF26B9600243800 /* CarsTextField.swift */; };
+		2DC87A7D1CF26B9600243800 /* CarsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87A7B1CF26B9600243800 /* CarsTextField.swift */; };
 		2DD922541CF240760092F2E3 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922531CF240760092F2E3 /* RestManager.swift */; };
 		2DD922551CF240760092F2E3 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922531CF240760092F2E3 /* RestManager.swift */; };
 		2DD922571CF255FB0092F2E3 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922561CF255FB0092F2E3 /* Average.swift */; };
@@ -142,6 +144,7 @@
 		2D8744C81CF21668009F8620 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2DC87A751CF263AF00243800 /* EditAverageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAverageViewController.swift; sourceTree = "<group>"; };
 		2DC87A781CF263E800243800 /* EditAverage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditAverage.storyboard; sourceTree = "<group>"; };
+		2DC87A7B1CF26B9600243800 /* CarsTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsTextField.swift; sourceTree = "<group>"; };
 		2DD922511CF239BD0092F2E3 /* Pods_FuelBattle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FuelBattle.framework; path = "../../../Library/Developer/Xcode/DerivedData/FuelBattle-emesbnkntdhlwcbgudppnrxmtrrk/Build/Products/Debug-iphonesimulator/Pods_FuelBattle.framework"; sourceTree = "<group>"; };
 		2DD922531CF240760092F2E3 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		2DD922561CF255FB0092F2E3 /* Average.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
@@ -316,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				2D8744A51CF1F80B009F8620 /* ClearView.swift */,
+				2DC87A7B1CF26B9600243800 /* CarsTextField.swift */,
 				2D2B5D121CF0F9AF00F801C8 /* Main.storyboard */,
 				2D8744C41CF2042F009F8620 /* EditCar.storyboard */,
 				2DC87A781CF263E800243800 /* EditAverage.storyboard */,
@@ -701,6 +705,7 @@
 				2D8744B71CF1F875009F8620 /* CellFeedback.swift in Sources */,
 				2D2B5D5A1CF14A5A00F801C8 /* BaseNavigationViewController.swift in Sources */,
 				2D8744C91CF21668009F8620 /* Car.swift in Sources */,
+				2DC87A7C1CF26B9600243800 /* CarsTextField.swift in Sources */,
 				2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */,
 				2D8744AF1CF1F875009F8620 /* CellSpace.swift in Sources */,
 				2D2B5D541CF145B700F801C8 /* R.generated.swift in Sources */,
@@ -745,6 +750,7 @@
 				2D8744B81CF1F875009F8620 /* CellFeedback.swift in Sources */,
 				2D2B5D6E1CF15B5400F801C8 /* BaseNavigationViewController.swift in Sources */,
 				2D8744CA1CF21668009F8620 /* Car.swift in Sources */,
+				2DC87A7D1CF26B9600243800 /* CarsTextField.swift in Sources */,
 				2D2B5D6F1CF15B5400F801C8 /* Key.swift in Sources */,
 				2D8744B01CF1F875009F8620 /* CellSpace.swift in Sources */,
 				2D2B5D701CF15B5400F801C8 /* R.generated.swift in Sources */,

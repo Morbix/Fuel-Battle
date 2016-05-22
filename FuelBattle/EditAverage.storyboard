@@ -8,35 +8,57 @@
         <scene sceneID="pi1-o6-9xX">
             <objects>
                 <tableViewController id="3tN-9o-htu" customClass="EditAverageViewController" customModule="FuelBattle" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z4p-3y-4Al">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Z4p-3y-4Al">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="Azd-Vt-xNw">
+                            <tableViewSection headerTitle="Car" id="p1U-gd-qh6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="om0-dB-dph">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="om0-dB-dph" id="wEy-sy-cOZ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8e-vm-UfI" customClass="CarsTextField" customModule="FuelBattle" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="T8e-vm-UfI" secondAttribute="trailing" constant="15" id="5Zi-C0-ScS"/>
+                                                <constraint firstItem="T8e-vm-UfI" firstAttribute="top" secondItem="wEy-sy-cOZ" secondAttribute="top" id="djo-jW-U14"/>
+                                                <constraint firstItem="T8e-vm-UfI" firstAttribute="leading" secondItem="wEy-sy-cOZ" secondAttribute="leading" constant="15" id="mXd-JS-Jx9"/>
+                                                <constraint firstAttribute="bottom" secondItem="T8e-vm-UfI" secondAttribute="bottom" id="sAF-JU-bJH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zfn-eZ-JSz">
-                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Average" id="zi0-pn-IVH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mz3-tP-5pC">
+                                        <rect key="frame" x="0.0" y="145" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zfn-eZ-JSz" id="b0w-HM-9jX">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mz3-tP-5pC" id="C44-xv-v8n">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BQn-1P-KhD">
-                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BQn-1P-KhD" id="eQr-um-vpe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYk-vf-Jli">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="FYk-vf-Jli" secondAttribute="bottom" id="6cG-XC-tVf"/>
+                                                <constraint firstItem="FYk-vf-Jli" firstAttribute="leading" secondItem="C44-xv-v8n" secondAttribute="leading" constant="15" id="Pks-ip-a8p"/>
+                                                <constraint firstItem="FYk-vf-Jli" firstAttribute="top" secondItem="C44-xv-v8n" secondAttribute="top" id="dzc-S0-bsK"/>
+                                                <constraint firstAttribute="trailing" secondItem="FYk-vf-Jli" secondAttribute="trailing" constant="15" id="i53-4W-zFY"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -49,6 +71,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="aHf-BY-qVm"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textFieldAverage" destination="FYk-vf-Jli" id="Pjb-LU-avL"/>
+                        <outlet property="textFieldCar" destination="T8e-vm-UfI" id="OX6-Ow-IQU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWn-uu-gcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
