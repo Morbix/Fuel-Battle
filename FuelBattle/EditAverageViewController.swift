@@ -13,6 +13,8 @@ class EditAverageViewController: UITableViewController {
     @IBOutlet weak var textFieldCar: CarsTextField!
     @IBOutlet weak var textFieldAverage: UITextField!
     
+    var newCarScreenOpenned = false
+    
     static func navigationController() -> UINavigationController {
         return R.storyboard.editAverage().instantiateInitialViewController() as? UINavigationController ?? UINavigationController()
     }
@@ -69,8 +71,15 @@ class EditAverageViewController: UITableViewController {
     }
     
     final private func showEmptyCarsMessage() {
-        showAlert(R.string.localizable.youDonTHaveACarPleaseAddOneFirst()) { action in
-            self.presentViewController(EditCarViewController.navigationController(), animated: true, completion: nil)
+        if !newCarScreenOpenned {
+            newCarScreenOpenned = true
+            showAlert(R.string.localizable.youDonTHaveACarPleaseAddOneFirst()) { action in
+                self.presentViewController(EditCarViewController.navigationController(), animated: true, completion: nil)
+            }
+        } else {
+            showAlert(R.string.localizable.youStillDonTHaveACar()) { action in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
         }
     }
     
