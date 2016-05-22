@@ -25,12 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        mixpanel.track("App Openned", properties: launchOptions)
+        
         runAppearance()
         
-        mixpanel.track(
-            "App Openned",
-            properties: launchOptions
-        )
+        application.statusBarStyle = .LightContent
         
         guard let _ = FIRAuth.auth()?.currentUser else {
             FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in
