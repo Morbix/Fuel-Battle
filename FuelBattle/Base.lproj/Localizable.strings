@@ -13,6 +13,7 @@
 "No data found" = "No data found";
 "Could not load data" = "Could not load data";
 "Add new car" = "Add new car";
+"Adding new Average" = "Adding new Average";
 "Be the first to add a Average" = "Be the first to add a Average";
 "Not implemented yet." = "Not implemented yet.";
 "All fields are required." = "All fields are required.";
@@ -21,3 +22,4 @@
 "Could not save the object." = "Could not save the object.";
 "You should be logged." = "You should be logged.";
 "Unexpected error." = "Unexpected error.";
+"You don't have a car. Please, add one first." = "You don't have a car. Please, add one first.";

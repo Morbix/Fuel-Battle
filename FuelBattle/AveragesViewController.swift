@@ -73,7 +73,7 @@ class AveragesViewController: BaseTableViewController {
     // MARK: Actions
     
     final func addTouched() {
-        
+        presentViewController(EditAverageViewController.navigationController(), animated: true, completion: nil)
     }
     
     final private func handleAddTouched() -> DidSelectRowAtIndexPath {

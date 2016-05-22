@@ -11,7 +11,6 @@ import UIKit
 
 class EditCarViewController: UITableViewController {
     
-    
     @IBOutlet weak var textFieldBrand: UITextField!
     @IBOutlet weak var textFieldModel: UITextField!
     @IBOutlet weak var textFieldYear: UITextField!
