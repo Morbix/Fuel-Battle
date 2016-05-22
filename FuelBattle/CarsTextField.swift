@@ -22,7 +22,7 @@ class CarsTextField: UITextField {
         picker.dataSource = self
         picker.delegate = self
         
-        self.inputAccessoryView = picker
+        self.inputView = picker
     }
 
 }
