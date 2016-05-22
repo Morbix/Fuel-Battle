@@ -64,7 +64,7 @@ class EditCarViewController: UITableViewController {
         
         spinner.show(R.string.localizable.saving(), disableUI: true)
         
-        car.insertInDatabase { (error) in
+        Rest.saveCar(car, withCompletion: SaveObjectCompletion { (error) in
             spinner.hide()
             
             if let _ = error {
@@ -72,7 +72,7 @@ class EditCarViewController: UITableViewController {
             } else {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
-        }
+        })
     }
     
     final func cancelTouched() {

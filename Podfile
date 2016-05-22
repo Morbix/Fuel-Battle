@@ -18,3 +18,7 @@ end
 target 'FuelBattle' do
     shared_pods
 end
+
+target 'Tailor' do
+    shared_pods
+end

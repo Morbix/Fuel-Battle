@@ -16,5 +16,7 @@
 "Not implemented yet." = "Not implemented yet.";
 "All fields are required." = "All fields are required.";
 "Saving..." = "Saving...";
+"Loading..." = "Loading...";
 "Could not save the object." = "Could not save the object.";
 "You should be logged." = "You should be logged.";
+"Unexpected error." = "Unexpected error.";

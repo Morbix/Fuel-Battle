@@ -11,6 +11,8 @@ import EZLoadingActivity
 
 let spinner = EZLoadingActivity.self
 let defaultEstimatedRowHeight: CGFloat = 50.0
+let defaultErrorShouldBeLogged = NSError(domain: R.string.localizable.youShouldBeLogged(), code: -1, userInfo: nil)
+let defaultErrorUnexpected = NSError(domain: R.string.localizable.unexpectedError(), code: -1, userInfo: nil)
 
 extension UIViewController {
     

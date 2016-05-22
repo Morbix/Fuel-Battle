@@ -15,12 +15,19 @@ class BaseTableViewController: UITableViewController {
     lazy var tableManager: TableManager = TableManager(tableView: self.tableView)
     lazy var defaultSection = Section()
     var useDefaultSection = true
+    var isFirstTime = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupCells()
         setupTable()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        isFirstTime = false
     }
 
     final private func setupCells() {

@@ -20,7 +20,7 @@ class GarageViewController: BaseTableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        retrieveData()
+        retrieveData(withSpinner: isFirstTime)
     }
 
     // MARK: Setups
@@ -33,7 +33,22 @@ class GarageViewController: BaseTableViewController {
     
     // MARK: Methodos
     
-    final private func retrieveData() {
+    final private func retrieveData(withSpinner withSpinner: Bool = false) {
+        
+        if withSpinner {
+            spinner.show(R.string.localizable.loading(), disableUI: true)
+        }
+        
+        Rest.retrieveAllCars(withCompletion: GetObjectsCompletion<Car> { (objects, error) in
+            if withSpinner {
+                spinner.hide()
+            }
+            
+            print(objects, error)
+        })
+    }
+    
+    final private func displayData(withCars cars: [Car]) {
         defaultSection.rows.removeAll()
         
         defaultSection.rows.append(CellAddNew.newRow(withContent: R.string.localizable.addNewCar(), didSelectBlock: handleAddTouched()))
