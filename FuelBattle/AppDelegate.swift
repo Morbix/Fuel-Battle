@@ -19,11 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        _ = Mixpanel.sharedInstanceWithToken(Key.mixpanel)
+        let mixpanel = Mixpanel.sharedInstanceWithToken(Key.mixpanel)
         
         _ = OneSignal(launchOptions: launchOptions, appId: Key.onesignal, handleNotification: nil)
         
         FIRApp.configure()
+        
+        mixpanel.track(
+            "App Openned",
+            properties: launchOptions
+        )
         
         return true
     }
