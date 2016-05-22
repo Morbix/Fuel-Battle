@@ -1,0 +1,32 @@
+###################### More Options ######################
+# If you want to have even more control, check out the documentation
+# https://github.com/fastlane/fastlane/blob/master/deliver/Deliverfile.md
+
+
+###################### Automatically generated ######################
+# Feel free to remove the following line if you use fastlane (which you should)
+
+app_identifier "me.cleberhenriques.FuelBattle" # The bundle identifier of your app
+username "morbin_@hotmail.com" # your Apple ID user
+force true # para não gerar relatório HTML
+price_tier 0 # preço do app
+# screenshots_path '' # caminho das screenshots, caso não esteja no caminho padrão
+# metadata_path # caminho dos metadados, caso não esteja no caminho padrão
+app_review_information({
+  first_name: "Henrique",
+  last_name: "Morbin",
+  phone_number: "+555181992194",
+  email_address: "morbin_@hotmail.com",
+  # demo_user: "demoUser",
+  # demo_password: "demoPass",
+  # notes: "such notes, very text"
+})
+# submission_information options https://github.com/fastlane/fastlane/blob/master/spaceship/lib/spaceship/tunes/app_submission.rb#L18-L69
+submission_information ({
+  add_id_info_uses_idfa: false,
+  add_id_info_serves_ads: false,
+  export_compliance_uses_encryption: false,
+  export_compliance_encryption_updated: false,
+})
+app_rating_config_path './fastlane/metadata/rating_config.json' # rating do app
+automatic_release true # liberar automaticamente após review da apple

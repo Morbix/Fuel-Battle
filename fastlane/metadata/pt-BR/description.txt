@@ -1,0 +1,5 @@
+Batalha de Combustível é um aplicativo para você que é amante de carros. 
+Ele analisa os dados inseridos pelos usuários e gera estatísticas de consumo médio para todas as marcas e modelos.
+
+Compare o consume médio do seu carro atual com o carro que você está pensando em comprar. Ou então, com o carro do seu vizinho. 
+Saiba qual é o modelo mais econômico. Ou então, qual é o mais gastão.

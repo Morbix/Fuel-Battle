@@ -1,0 +1,149 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.89.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    ENV['MAILGUN_SANDBOX_POSTMASTER'] ||= "postmaster@sandbox891150e86f0d4d03a324522e42397ef8.mailgun.org"
+    ENV['MAILGUN_APIKEY'] = "key-8c18bc6df72fa1efc66d756b3c795a27"
+    ENV['MAILGUN_APP_LINK'] = "https://github.com/fastlane/fastlane"
+  end
+
+  desc "Generate Certificates, Push Certificates and Provisionings"
+  lane :generate_all_keys do
+    generate_keys
+    generate_keys(production:true)
+  end
+
+  desc "Generate Certificates, Push Certificates and Provisionings"
+  desc "Optional -> production:[boolean]"
+  lane :generate_keys do |options| # production:[boolean]
+    cert(
+        development: (options[:production] ? false : true), # Development x Production
+        output_path: "./fastlane/certificates",
+        # force: true,
+    )
+    pem(
+        development: (options[:production] ? false : true), # Development x Production
+        output_path: "./fastlane/certificates",
+        generate_p12: true,
+        # force: true,
+    )
+    sigh(
+        force: true,
+        output_path: "./fastlane/certificates",
+        adhoc: false, # AdHoc x App Store,
+        development: (options[:production] ? false : true), # Development x Production
+        # skip_install: true, # para não instalar
+    )
+  end
+
+  desc "Just Upload Screenshots"
+  lane :just_upload_screenshots do
+    deliver(
+      submit_for_review: false,
+      skip_binary_upload: true,
+      skip_metadata: true,
+      skip_screenshots: false,
+      # app_icon: "./fastlane/metadata/icon1024.png",
+      # ipa: "./build/App.ipa",
+      # build_number: "1"
+    )
+  end
+
+  desc "Just Upload Metadata"
+  lane :just_upload_metadata do
+    deliver(
+      submit_for_review: false,
+      skip_binary_upload: true,
+      skip_metadata: false,
+      skip_screenshots: true,
+      app_icon: "./fastlane/metadata/iTunesArtworkWithoutAlpha.png",
+      # ipa: "./build/App.ipa",
+      # build_number: "1"
+    )
+  end
+
+  desc "Just Upload Binary"
+  lane :just_upload_binary do
+    deliver(
+      submit_for_review: false,
+      skip_binary_upload: false,
+      skip_metadata: true,
+      skip_screenshots: true,
+      # app_icon: "./fastlane/metadata/icon1024.png",
+      ipa: "./fastlane/build/App.ipa",
+      # build_number: "1"
+    )
+  end
+
+  desc "Submit For Review"
+  desc "Required -> build:[string_build_number]"
+  lane :submit_for_review do |options|
+    deliver(
+      submit_for_review: true,
+      skip_binary_upload: true,
+      skip_metadata: true,
+      skip_screenshots: true,
+      # app_icon: "./fastlane/metadata/icon1024.png",
+      # ipa: "./fastlane/build/App.ipa",
+      build_number: options[:build]
+    )
+  end
+
+  desc "Just Build"
+  lane :just_build do
+    gym(
+      export_method: "app-store", # ["app-store", "ad-hoc", "package", "enterprise", "development", "developer-id"]
+      configuration: "Release", #Debug, Release
+    )
+  end
+
+  desc "Run Deliver"
+  lane :run_deliver do |options|
+      # just_build
+      # just_upload_binary
+      just_upload_metadata
+      submit_for_review(build:(options[:build] ? options[:build] : "1"))
+  end
+
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+    notification(subtitle: "Fastlane", message: "#{lane} completed successfully!")
+    # mailgun(
+        # to: "morbin_@hotmail.com",
+        # success: true,
+        # message: "#{lane} completed successfully!"
+    # )
+  end
+
+  error do |lane, exception|
+    notification(subtitle: "Fastlane", message: "#{lane} stopped with error: #{exception.message}")
+    # mailgun(
+        # to: "morbin_@hotmail.com",
+        # success: true,
+        # message: "#{lane} stopped with error: #{exception.message}"
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

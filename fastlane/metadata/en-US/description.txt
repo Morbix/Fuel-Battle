@@ -1,0 +1,5 @@
+Battle Fuel is an application for you who is a car lover.
+It analyzes the data entered by users and generates statistics of average consumption for all brands and models.
+
+Compare the average consumption of your current car with the car you are considering buying. Or, with the car of your neighbor.
+Discover what is the most economical model. Or, what is the worst.

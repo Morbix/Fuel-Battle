@@ -1,0 +1,8 @@
+scheme "FuelBattle"
+workspace "../FuelBattle.xcworkspace"
+clean true
+output_directory "./fastlane/build"
+output_name "App"
+use_legacy_build_api false
+include_bitcode false
+include_symbols true
