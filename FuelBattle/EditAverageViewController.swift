@@ -77,7 +77,29 @@ class EditAverageViewController: UITableViewController {
     // MARK: Actions
     
     final func saveTouched() {
+        guard let car = textFieldCar.selectedCar else {
+            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            return
+        }
         
+        guard let averageText = textFieldAverage.text, averageInt = Int(averageText) where averageInt > 0 else {
+            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            return
+        }
+        
+        let average = Average(car: car, average: averageInt)
+        
+        spinner.show(R.string.localizable.saving(), disableUI: true)
+        
+        Rest.saveAverage(average, withCompletion: SaveObjectCompletion { (error) in
+            spinner.hide()
+            
+            if let _ = error {
+                self.showAlert(withMessage: R.string.localizable.couldNotSaveTheObject())
+            } else {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        })
     }
     
     final func cancelTouched() {

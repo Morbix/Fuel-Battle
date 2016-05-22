@@ -15,12 +15,8 @@ struct Average {
 
 extension Average {
     
-    init?(withDictionary dictionary: [String: AnyObject]) {
-        guard let carDict = dictionary["car"] as? [String: AnyObject] else {
-            return nil
-        }
-        
-        car = Car(withDictionary: carDict)
+    init(withDictionary dictionary: [String: AnyObject]) {
+        car = Car(withDictionary: dictionary)
         average = dictionary["average"] as? Int ?? 0
     }
     

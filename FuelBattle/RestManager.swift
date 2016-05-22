@@ -77,10 +77,10 @@ struct Rest {
             return
         }
         
-        let parameters = ["brand": average.car.brand, "model": average.car.model, "year": average.car.year, "fuel": average.car.fuel, "average": average.average]
+        let parameters = ["brand": average.car.brand, "model": average.car.model, "year": average.car.year, "fuel": average.car.fuel, "average": average.average, "user": user.uid]
         
         let ref = FIRDatabase.database().reference()
-        ref.child("average/\(user.uid)").childByAutoId().setValue(parameters) { (error, ref) in
+        ref.child("average").childByAutoId().setValue(parameters) { (error, ref) in
             completion.block(error: error)
         }
     }
