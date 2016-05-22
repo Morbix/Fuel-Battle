@@ -31,7 +31,7 @@ class GarageViewController: BaseTableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(GarageViewController.addTouched))
     }
     
-    // MARK: Methodos
+    // MARK: Methods
     
     final private func retrieveData(withSpinner withSpinner: Bool = false) {
         
@@ -44,14 +44,30 @@ class GarageViewController: BaseTableViewController {
                 spinner.hide()
             }
             
-            print(objects, error)
+            if let _ = error {
+                self.loadErrorFeedback()
+            } else if objects.count == 0 {
+                self.loadEmptyFeedback()
+            } else {
+                self.displayData(objects)
+            }
         })
     }
     
-    final private func displayData(withCars cars: [Car]) {
+    final private func displayData(cars: [Car]) {
         defaultSection.rows.removeAll()
         
+        cars.forEach {
+            defaultSection.rows.append(CellFeedback.newRow(withText: $0.verbose))
+        }
+        
+        tableManager.reloadData()
+    }
+    
+    final override func loadEmptyFeedback() {
+        defaultSection.rows.removeAll()
         defaultSection.rows.append(CellAddNew.newRow(withContent: R.string.localizable.addNewCar(), didSelectBlock: handleAddTouched()))
+        tableManager.reloadData()
     }
     
     // MARK: Actions

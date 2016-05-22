@@ -15,6 +15,11 @@ struct Car {
     let model: String
     let year: String
     let fuel: String
+    
+    var verbose: String {
+        return "\(brand) > \(model) > \(year) > \(fuel)"
+    }
+    
 }
 
 extension Car {

@@ -30,6 +30,8 @@ class BaseTableViewController: UITableViewController {
         isFirstTime = false
     }
 
+    // MARK: Setups
+    
     final private func setupCells() {
         tableView.registerNib(R.nib.cellAddNew)
         tableView.registerNib(R.nib.cellFeedback)
@@ -45,6 +47,20 @@ class BaseTableViewController: UITableViewController {
         if useDefaultSection {
             tableManager.sections.append(defaultSection)
         }
+    }
+    
+    // MARK: Methods
+    
+    func loadErrorFeedback() {
+        defaultSection.rows.removeAll()
+        defaultSection.rows.append(CellFeedback.newErrorFeedbackRow())
+        tableManager.reloadData()
+    }
+    
+    func loadEmptyFeedback() {
+        defaultSection.rows.removeAll()
+        defaultSection.rows.append(CellFeedback.newErrorFeedbackRow())
+        tableManager.reloadData()
     }
     
 }
