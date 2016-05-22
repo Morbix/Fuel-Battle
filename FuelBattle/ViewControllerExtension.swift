@@ -15,7 +15,7 @@ let defaultEstimatedRowHeight: CGFloat = 50.0
 extension UIViewController {
     
     final func showAlert(withMessage message: String) {
-        showAlert(withTitle: R.string.atencao, message: message)
+        showAlert(withTitle: R.string.localizable.attention(), message: message)
     }
     
     final func showAlert(withTitle title: String?, message: String) {

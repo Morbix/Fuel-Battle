@@ -9,16 +9,18 @@
 import UIKit
 import TableManager
 
-class GarageViewController: UITableViewController {
+class GarageViewController: BaseTableViewController {
 
-    lazy var tableManager: TableManager = TableManager(tableView: self.tableView)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavBar()
-        setupCells()
-        setupTable()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        retrieveData()
     }
 
     // MARK: Setups
@@ -29,20 +31,27 @@ class GarageViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(GarageViewController.addTouched))
     }
     
-    final private func setupCells() {
-        // tableView.registerNib(R.nib.cellInformation)
-    }
+    // MARK: Methodos
     
-    final private func setupTable() {
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = defaultEstimatedRowHeight
-        tableView.separatorStyle = .None
+    final private func retrieveData() {
+        defaultSection.rows.removeAll()
+        
+        defaultSection.rows.append(CellAddNew.newRow(withContent: R.string.localizable.addNewCar(), didSelectBlock: handleAddTouched()))
     }
     
     // MARK: Actions
     
     final func addTouched() {
-        
+        showAlert(withMessage: R.string.localizable.notImplementedYet())
+    }
+    
+    final private func handleAddTouched() -> DidSelectRowAtIndexPath {
+        return { (row: Row, tableView: UITableView, indexPath: NSIndexPath) -> Void in
+            
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            
+            self.addTouched()
+        }
     }
     
 }
