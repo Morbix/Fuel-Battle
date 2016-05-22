@@ -42,7 +42,7 @@ class GarageViewController: BaseTableViewController {
     // MARK: Actions
     
     final func addTouched() {
-        showAlert(withMessage: R.string.localizable.notImplementedYet())
+        presentViewController(EditCarViewController.navigationController(), animated: true, completion: nil)
     }
     
     final private func handleAddTouched() -> DidSelectRowAtIndexPath {
