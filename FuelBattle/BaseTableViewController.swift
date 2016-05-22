@@ -37,6 +37,7 @@ class BaseTableViewController: UITableViewController {
         tableView.registerNib(R.nib.cellFeedback)
         tableView.registerNib(R.nib.cellSpace)
         tableView.registerNib(R.nib.cellLine)
+        tableView.registerNib(R.nib.cellDefault)
     }
     
     final private func setupTable() {

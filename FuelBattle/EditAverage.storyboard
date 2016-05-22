@@ -38,7 +38,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Average" id="zi0-pn-IVH">
+                            <tableViewSection headerTitle="Average (L)" id="zi0-pn-IVH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mz3-tP-5pC">
                                         <rect key="frame" x="0.0" y="145" width="320" height="44"/>

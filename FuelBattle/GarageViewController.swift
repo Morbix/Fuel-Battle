@@ -58,7 +58,7 @@ class GarageViewController: BaseTableViewController {
         defaultSection.rows.removeAll()
         
         cars.forEach {
-            defaultSection.rows.append(CellFeedback.newRow(withText: $0.verbose))
+            defaultSection.rows.append(CellDefault.newRow(withText: $0.verbose, detail: ""))
         }
         
         tableManager.reloadData()
