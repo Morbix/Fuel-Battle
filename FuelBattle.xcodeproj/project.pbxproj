@@ -30,13 +30,19 @@
 		2D2B5D6E1CF15B5400F801C8 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D581CF14A5A00F801C8 /* BaseNavigationViewController.swift */; };
 		2D2B5D6F1CF15B5400F801C8 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4E1CF10EE000F801C8 /* Key.swift */; };
 		2D2B5D701CF15B5400F801C8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D531CF145B700F801C8 /* R.generated.swift */; };
-		2D2B5D721CF15B5400F801C8 /* Pods_FuelBattle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106C134B9050DEC57016B077 /* Pods_FuelBattle.framework */; };
 		2D2B5D741CF15B5400F801C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */; };
 		2D2B5D751CF15B5400F801C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D5F1CF14F3D00F801C8 /* Localizable.strings */; };
 		2D2B5D761CF15B5400F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */; };
 		2D2B5D771CF15B5400F801C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D151CF0F9AF00F801C8 /* Assets.xcassets */; };
 		2D2B5D781CF15B5400F801C8 /* Fuel Battle.clr in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D621CF156F500F801C8 /* Fuel Battle.clr */; };
 		2D2B5D791CF15B5400F801C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D121CF0F9AF00F801C8 /* Main.storyboard */; };
+		2D8744951CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */; };
+		2D8744961CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */; };
+		2D8744971CF1F0A5009F8620 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744931CF1F0A5009F8620 /* ViewExtension.swift */; };
+		2D8744981CF1F0A5009F8620 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744931CF1F0A5009F8620 /* ViewExtension.swift */; };
+		2D8744991CF1F0A5009F8620 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744941CF1F0A5009F8620 /* StringExtension.swift */; };
+		2D87449A1CF1F0A5009F8620 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744941CF1F0A5009F8620 /* StringExtension.swift */; };
+		6043E319C1C6CB331B9FD36E /* Pods_FuelBattle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106C134B9050DEC57016B077 /* Pods_FuelBattle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02ADBA0A5F4A2147114CDCB9 /* Pods-FuelBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.release.xcconfig"; sourceTree = "<group>"; };
 		106C134B9050DEC57016B077 /* Pods_FuelBattle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelBattle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D0B1CF0F9AF00F801C8 /* FuelBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D0E1CF0F9AF00F801C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +89,10 @@
 		2D2B5D641CF1595C00F801C8 /* GarageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
 		2D2B5D7F1CF15B5400F801C8 /* Tailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D801CF15B5400F801C8 /* FuelBattle copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FuelBattle copy-Info.plist"; path = "/Users/henriquemorbin/Projects/Morbix/FuelBattle/FuelBattle copy-Info.plist"; sourceTree = "<absolute>"; };
-		60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
-		BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.release.xcconfig"; sourceTree = "<group>"; };
+		2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		2D8744931CF1F0A5009F8620 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2D8744941CF1F0A5009F8620 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FF0F1DF452592B376A289A96 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110A9BA5B90DAEC6C6E22B56 /* Pods_FuelBattle.framework in Frameworks */,
+				6043E319C1C6CB331B9FD36E /* Pods_FuelBattle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2B5D721CF15B5400F801C8 /* Pods_FuelBattle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +164,7 @@
 				2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */,
 				2D2B5D1A1CF0F9AF00F801C8 /* Info.plist */,
 				2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */,
+				2D8744911CF1F072009F8620 /* Helper and Extensions */,
 				2D2B5D561CF146E400F801C8 /* Resources */,
 				2D2B5D551CF146CE00F801C8 /* View Controllers */,
 			);
@@ -217,11 +227,21 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		2D8744911CF1F072009F8620 /* Helper and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */,
+				2D8744931CF1F0A5009F8620 /* ViewExtension.swift */,
+				2D8744941CF1F0A5009F8620 /* StringExtension.swift */,
+			);
+			name = "Helper and Extensions";
+			sourceTree = "<group>";
+		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */,
-				BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */,
+				FF0F1DF452592B376A289A96 /* Pods-FuelBattle.debug.xcconfig */,
+				02ADBA0A5F4A2147114CDCB9 /* Pods-FuelBattle.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -298,13 +318,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2B5D7C1CF15B5400F801C8 /* Build configuration list for PBXNativeTarget "Tailor" */;
 			buildPhases = (
-				2D2B5D671CF15B5400F801C8 /* 📦 Check Pods Manifest.lock */,
 				2D2B5D681CF15B5400F801C8 /* Run Script - R.Swift */,
 				2D2B5D691CF15B5400F801C8 /* Sources */,
 				2D2B5D711CF15B5400F801C8 /* Frameworks */,
 				2D2B5D731CF15B5400F801C8 /* Resources */,
-				2D2B5D7A1CF15B5400F801C8 /* 📦 Embed Pods Frameworks */,
-				2D2B5D7B1CF15B5400F801C8 /* 📦 Copy Pods Resources */,
 				2D2B5D811CF15B7100F801C8 /* Run Script - Tailor */,
 			);
 			buildRules = (
@@ -426,21 +443,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
 		};
-		2D2B5D671CF15B5400F801C8 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		2D2B5D681CF15B5400F801C8 /* Run Script - R.Swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,36 +456,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
-		};
-		2D2B5D7A1CF15B5400F801C8 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D2B5D7B1CF15B5400F801C8 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		2D2B5D811CF15B7100F801C8 /* Run Script - Tailor */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -551,10 +523,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8744971CF1F0A5009F8620 /* ViewExtension.swift in Sources */,
 				2D2B5D591CF14A5A00F801C8 /* MainTabBarViewController.swift in Sources */,
+				2D8744991CF1F0A5009F8620 /* StringExtension.swift in Sources */,
 				2D2B5D111CF0F9AF00F801C8 /* AveragesViewController.swift in Sources */,
 				2D2B5D0F1CF0F9AF00F801C8 /* AppDelegate.swift in Sources */,
 				2D2B5D651CF1595C00F801C8 /* GarageViewController.swift in Sources */,
+				2D8744951CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */,
 				2D2B5D5A1CF14A5A00F801C8 /* BaseNavigationViewController.swift in Sources */,
 				2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */,
 				2D2B5D541CF145B700F801C8 /* R.generated.swift in Sources */,
@@ -581,10 +556,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8744981CF1F0A5009F8620 /* ViewExtension.swift in Sources */,
 				2D2B5D6A1CF15B5400F801C8 /* MainTabBarViewController.swift in Sources */,
+				2D87449A1CF1F0A5009F8620 /* StringExtension.swift in Sources */,
 				2D2B5D6B1CF15B5400F801C8 /* AveragesViewController.swift in Sources */,
 				2D2B5D6C1CF15B5400F801C8 /* AppDelegate.swift in Sources */,
 				2D2B5D6D1CF15B5400F801C8 /* GarageViewController.swift in Sources */,
+				2D8744961CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */,
 				2D2B5D6E1CF15B5400F801C8 /* BaseNavigationViewController.swift in Sources */,
 				2D2B5D6F1CF15B5400F801C8 /* Key.swift in Sources */,
 				2D2B5D701CF15B5400F801C8 /* R.generated.swift in Sources */,
@@ -721,7 +699,7 @@
 		};
 		2D2B5D341CF0F9B000F801C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */;
+			baseConfigurationReference = FF0F1DF452592B376A289A96 /* Pods-FuelBattle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -738,7 +716,7 @@
 		};
 		2D2B5D351CF0F9B000F801C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */;
+			baseConfigurationReference = 02ADBA0A5F4A2147114CDCB9 /* Pods-FuelBattle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -800,7 +778,6 @@
 		};
 		2D2B5D7D1CF15B5400F801C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -817,7 +794,6 @@
 		};
 		2D2B5D7E1CF15B5400F801C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

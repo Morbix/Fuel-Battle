@@ -1,4 +1,5 @@
 PODS:
+  - EZLoadingActivity (0.8)
   - Firebase (3.2.0):
     - Firebase/Core (= 3.2.0)
   - Firebase/Analytics (3.2.0):
@@ -40,6 +41,7 @@ PODS:
   - TableManager (0.0.3)
 
 DEPENDENCIES:
+  - EZLoadingActivity
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -49,6 +51,7 @@ DEPENDENCIES:
   - TableManager
 
 SPEC CHECKSUMS:
+  EZLoadingActivity: 6fd75a05765a4085f4b6fef6f62edf9f144b3139
   Firebase: 6d4012da1598732a2b43f16d8355eca90f94ed59
   FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
   FirebaseAuth: 94b851fc345ce98036dfedfdc2eddeaef8fa3b4c
@@ -64,6 +67,6 @@ SPEC CHECKSUMS:
   R.swift.Library: e5e077ed04f6867a95676af491650091b23518e9
   TableManager: 62988b7727cbeb3cb1d8585951b307bb17003980
 
-PODFILE CHECKSUM: 112c9ad1fc30ee8d057e28aa911943c283b6dc3c
+PODFILE CHECKSUM: 857c12fa0f4e84c132ce6b05ca63d1c24a75b63e
 
 COCOAPODS: 1.0.0

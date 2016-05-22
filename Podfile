@@ -12,6 +12,7 @@ def shared_pods
     pod 'Firebase/Database'
     pod 'R.swift'
     pod 'TableManager'
+    pod 'EZLoadingActivity'
 end
 
 target 'FuelBattle' do

@@ -7,13 +7,42 @@
 //
 
 import UIKit
+import TableManager
 
 class GarageViewController: UITableViewController {
 
+    lazy var tableManager: TableManager = TableManager(tableView: self.tableView)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = R.string.localizable.garage()
+        setupNavBar()
+        setupCells()
+        setupTable()
     }
 
+    // MARK: Setups
+    
+    final private func setupNavBar() {
+        navigationItem.title = R.string.localizable.garage()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(GarageViewController.addTouched))
+    }
+    
+    final private func setupCells() {
+        // tableView.registerNib(R.nib.cellInformation)
+    }
+    
+    final private func setupTable() {
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = defaultEstimatedRowHeight
+        tableView.separatorStyle = .None
+    }
+    
+    // MARK: Actions
+    
+    final func addTouched() {
+        
+    }
+    
 }
