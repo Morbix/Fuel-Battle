@@ -9,6 +9,8 @@ def shared_pods
     pod 'Mixpanel'
     pod 'Firebase'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'R.swift'
 end
 
 target 'FuelBattle' do
