@@ -66,6 +66,8 @@
 		2D8744C11CF2039F009F8620 /* EditCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744BE1CF2039F009F8620 /* EditCarViewController.swift */; };
 		2D8744C51CF2042F009F8620 /* EditCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8744C41CF2042F009F8620 /* EditCar.storyboard */; };
 		2D8744C61CF2042F009F8620 /* EditCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8744C41CF2042F009F8620 /* EditCar.storyboard */; };
+		2D8744C91CF21668009F8620 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744C81CF21668009F8620 /* Car.swift */; };
+		2D8744CA1CF21668009F8620 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744C81CF21668009F8620 /* Car.swift */; };
 		6043E319C1C6CB331B9FD36E /* Pods_FuelBattle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106C134B9050DEC57016B077 /* Pods_FuelBattle.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +130,7 @@
 		2D8744BB1CF1FC99009F8620 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		2D8744BE1CF2039F009F8620 /* EditCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCarViewController.swift; sourceTree = "<group>"; };
 		2D8744C41CF2042F009F8620 /* EditCar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditCar.storyboard; sourceTree = "<group>"; };
+		2D8744C81CF21668009F8620 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		FF0F1DF452592B376A289A96 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +199,7 @@
 				2D2B5D0E1CF0F9AF00F801C8 /* AppDelegate.swift */,
 				2D2B5D1A1CF0F9AF00F801C8 /* Info.plist */,
 				2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */,
+				2D8744C71CF2164A009F8620 /* Models */,
 				2D2B5D561CF146E400F801C8 /* Resources */,
 				2D8744911CF1F072009F8620 /* Helper and Extensions */,
 				2D8744A81CF1F816009F8620 /* Views */,
@@ -299,6 +303,14 @@
 				2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		2D8744C71CF2164A009F8620 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D8744C81CF21668009F8620 /* Car.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
@@ -611,6 +623,7 @@
 				2D8744BC1CF1FC99009F8620 /* BaseTableViewController.swift in Sources */,
 				2D8744B71CF1F875009F8620 /* CellFeedback.swift in Sources */,
 				2D2B5D5A1CF14A5A00F801C8 /* BaseNavigationViewController.swift in Sources */,
+				2D8744C91CF21668009F8620 /* Car.swift in Sources */,
 				2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */,
 				2D8744AF1CF1F875009F8620 /* CellSpace.swift in Sources */,
 				2D2B5D541CF145B700F801C8 /* R.generated.swift in Sources */,
@@ -651,6 +664,7 @@
 				2D8744BD1CF1FC99009F8620 /* BaseTableViewController.swift in Sources */,
 				2D8744B81CF1F875009F8620 /* CellFeedback.swift in Sources */,
 				2D2B5D6E1CF15B5400F801C8 /* BaseNavigationViewController.swift in Sources */,
+				2D8744CA1CF21668009F8620 /* Car.swift in Sources */,
 				2D2B5D6F1CF15B5400F801C8 /* Key.swift in Sources */,
 				2D8744B01CF1F875009F8620 /* CellSpace.swift in Sources */,
 				2D2B5D701CF15B5400F801C8 /* R.generated.swift in Sources */,
