@@ -40,22 +40,22 @@ class EditCarViewController: UITableViewController {
     
     final func saveTouched() {
         guard let brand = textFieldBrand.text where !brand.isEmpty else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
         guard let model = textFieldModel.text where !brand.isEmpty else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
         guard let year = textFieldYear.text where !brand.isEmpty else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
         guard let fuel = textFieldFuel.text where !brand.isEmpty else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
@@ -67,7 +67,7 @@ class EditCarViewController: UITableViewController {
             spinner.hide()
             
             if let _ = error {
-                self.showAlert(withMessage: R.string.localizable.couldNotSaveTheObject())
+                self.showAlert(R.string.localizable.couldNotSaveTheObject())
             } else {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }

@@ -23,8 +23,8 @@ class EditAverageViewController: UITableViewController {
         setupNavBar()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         retrieveData(withSpinner: true)
     }
@@ -64,26 +64,26 @@ class EditAverageViewController: UITableViewController {
     }
     
     final private func showErrorMessage() {
-        showAlert(withMessage: R.string.localizable.couldNotLoadData())
+        showAlert(R.string.localizable.couldNotLoadData())
         cancelTouched()
     }
     
     final private func showEmptyCarsMessage() {
-        showAlert(withMessage: R.string.localizable.youDonTHaveACarPleaseAddOneFirst())
-        presentViewController(EditCarViewController.navigationController(), animated: true, completion: nil)
-        
+        showAlert(R.string.localizable.youDonTHaveACarPleaseAddOneFirst()) { action in
+            self.presentViewController(EditCarViewController.navigationController(), animated: true, completion: nil)
+        }
     }
     
     // MARK: Actions
     
     final func saveTouched() {
         guard let car = textFieldCar.selectedCar else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
         guard let averageText = textFieldAverage.text, averageInt = Int(averageText) where averageInt > 0 else {
-            showAlert(withMessage: R.string.localizable.allFieldsAreRequired())
+            showAlert(R.string.localizable.allFieldsAreRequired())
             return
         }
         
@@ -95,7 +95,7 @@ class EditAverageViewController: UITableViewController {
             spinner.hide()
             
             if let _ = error {
-                self.showAlert(withMessage: R.string.localizable.couldNotSaveTheObject())
+                self.showAlert(R.string.localizable.couldNotSaveTheObject())
             } else {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }

@@ -58,7 +58,7 @@ class AveragesViewController: BaseTableViewController {
         defaultSection.rows.removeAll()
         
         objects.forEach {
-            defaultSection.rows.append(CellDefault.newRow(withText: $0.car.verbose, detail: "\($0.average)"))
+            defaultSection.rows.append(CellDefault.newRow(withText: $0.car.verbose, detail: "\($0.average) (L)"))
         }
         
         tableManager.reloadData()

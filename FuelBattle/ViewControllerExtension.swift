@@ -16,13 +16,9 @@ let defaultErrorUnexpected = NSError(domain: R.string.localizable.unexpectedErro
 
 extension UIViewController {
     
-    final func showAlert(withMessage message: String) {
-        showAlert(withTitle: R.string.localizable.attention(), message: message)
-    }
-    
-    final func showAlert(withTitle title: String?, message: String) {
+    final func showAlert(message: String, title: String = R.string.localizable.attention(), okHandler: ((UIAlertAction) -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: okHandler))
         presentViewController(alert, animated: true, completion: nil)
     }
     
