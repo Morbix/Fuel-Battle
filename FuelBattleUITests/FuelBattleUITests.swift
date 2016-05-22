@@ -9,7 +9,13 @@
 import XCTest
 
 class FuelBattleUITests: XCTestCase {
-        
+    
+    let countEqual1 = NSPredicate(format: "count == 1")
+    let exists = NSPredicate(format: "exists == 1")
+    let notExists = NSPredicate(format: "exists == 0")
+    let demoItems = ["Feed the dog", "Close windows", "Lock doors", "Turn on alarm"]
+    let timeout: NSTimeInterval = 5
+    
     override func setUp() {
         super.setUp()
         
@@ -21,6 +27,10 @@ class FuelBattleUITests: XCTestCase {
         XCUIApplication().launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
+        let app = XCUIApplication()
+        setupSnapshot(app)
+        app.launch()
     }
     
     override func tearDown() {
@@ -29,8 +39,12 @@ class FuelBattleUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        let navigation = app.navigationBars["Averages"]
+        expectationForPredicate(exists, evaluatedWithObject: navigation, handler: nil)
+        waitForExpectationsWithTimeout(timeout, handler: nil)
+        
+        snapshot("0Main")
     }
     
 }

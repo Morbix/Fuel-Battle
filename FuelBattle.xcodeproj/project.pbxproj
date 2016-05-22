@@ -78,6 +78,7 @@
 		2DC87A841CF271E300243800 /* CellDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87A811CF271E300243800 /* CellDefault.swift */; };
 		2DC87A851CF271E300243800 /* CellDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87A821CF271E300243800 /* CellDefault.xib */; };
 		2DC87A861CF271E300243800 /* CellDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC87A821CF271E300243800 /* CellDefault.xib */; };
+		2DC87A881CF278FD00243800 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87A871CF278FD00243800 /* SnapshotHelper.swift */; };
 		2DD922541CF240760092F2E3 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922531CF240760092F2E3 /* RestManager.swift */; };
 		2DD922551CF240760092F2E3 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922531CF240760092F2E3 /* RestManager.swift */; };
 		2DD922571CF255FB0092F2E3 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD922561CF255FB0092F2E3 /* Average.swift */; };
@@ -151,6 +152,7 @@
 		2DC87A7B1CF26B9600243800 /* CarsTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsTextField.swift; sourceTree = "<group>"; };
 		2DC87A811CF271E300243800 /* CellDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDefault.swift; sourceTree = "<group>"; };
 		2DC87A821CF271E300243800 /* CellDefault.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDefault.xib; sourceTree = "<group>"; };
+		2DC87A871CF278FD00243800 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		2DD922511CF239BD0092F2E3 /* Pods_FuelBattle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FuelBattle.framework; path = "../../../Library/Developer/Xcode/DerivedData/FuelBattle-emesbnkntdhlwcbgudppnrxmtrrk/Build/Products/Debug-iphonesimulator/Pods_FuelBattle.framework"; sourceTree = "<group>"; };
 		2DD922531CF240760092F2E3 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		2DD922561CF255FB0092F2E3 /* Average.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		2D2B5D2D1CF0F9B000F801C8 /* FuelBattleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2DC87A871CF278FD00243800 /* SnapshotHelper.swift */,
 				2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */,
 				2D2B5D301CF0F9B000F801C8 /* Info.plist */,
 			);
@@ -736,6 +739,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2B5D2F1CF0F9B000F801C8 /* FuelBattleUITests.swift in Sources */,
+				2DC87A881CF278FD00243800 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

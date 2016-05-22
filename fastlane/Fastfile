@@ -120,6 +120,9 @@ platform :ios do
       submit_for_review(build:(options[:build] ? options[:build] : "1"))
   end
 
+  lane :screenshots do
+    snapshot
+  end
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
