@@ -11,6 +11,7 @@ def shared_pods
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'R.swift'
+    pod 'TableManager'
 end
 
 target 'FuelBattle' do

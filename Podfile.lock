@@ -37,6 +37,7 @@ PODS:
   - R.swift (2.3.0):
     - R.swift.Library (~> 2.1.0)
   - R.swift.Library (2.1.0)
+  - TableManager (0.0.3)
 
 DEPENDENCIES:
   - Firebase
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - Mixpanel
   - OneSignal
   - R.swift
+  - TableManager
 
 SPEC CHECKSUMS:
   Firebase: 6d4012da1598732a2b43f16d8355eca90f94ed59
@@ -60,7 +62,8 @@ SPEC CHECKSUMS:
   OneSignal: 15b94fa760a6754908f11ef92da6ec945923fa2c
   R.swift: 38b2191a603c3d491a09baddfb4ccc7aa9be4d9d
   R.swift.Library: e5e077ed04f6867a95676af491650091b23518e9
+  TableManager: 62988b7727cbeb3cb1d8585951b307bb17003980
 
-PODFILE CHECKSUM: 442ff8254c70a41328b8b87ed2be8293599f8b02
+PODFILE CHECKSUM: 112c9ad1fc30ee8d057e28aa911943c283b6dc3c
 
 COCOAPODS: 1.0.0

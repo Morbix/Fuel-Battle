@@ -113,13 +113,13 @@
 			isa = PBXGroup;
 			children = (
 				2D2B5D0E1CF0F9AF00F801C8 /* AppDelegate.swift */,
-				2D2B5D101CF0F9AF00F801C8 /* ViewController.swift */,
-				2D2B5D531CF145B700F801C8 /* R.generated.swift */,
 				2D2B5D121CF0F9AF00F801C8 /* Main.storyboard */,
 				2D2B5D151CF0F9AF00F801C8 /* Assets.xcassets */,
 				2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */,
 				2D2B5D1A1CF0F9AF00F801C8 /* Info.plist */,
 				2D2B5D411CF1073F00F801C8 /* FuelBattle-Bridging-Header.h */,
+				2D2B5D561CF146E400F801C8 /* Resources */,
+				2D2B5D551CF146CE00F801C8 /* View Controllers */,
 			);
 			path = FuelBattle;
 			sourceTree = "<group>";
@@ -158,6 +158,22 @@
 				2D2B5D4C1CF10EE000F801C8 /* Fuel-Battle-Keys */,
 			);
 			name = Submodules;
+			sourceTree = "<group>";
+		};
+		2D2B5D551CF146CE00F801C8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B5D101CF0F9AF00F801C8 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2D2B5D561CF146E400F801C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D2B5D531CF145B700F801C8 /* R.generated.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		38ED63D6A59E7877EBE14859 /* Pods */ = {
