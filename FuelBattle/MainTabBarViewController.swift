@@ -21,13 +21,13 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBar.tintColor = R.color.fuelBattle.grayLight.color()
-        tabBar.barTintColor = R.color.fuelBattle.orange.color()
+        tabBar.tintColor = R.color.fuelBattle.gray.color()
+        tabBar.barTintColor = R.color.fuelBattle.grayLight.color()
         tabBar.translucent = false
         
         let items = [
-            Item(title: R.string.localizable.averages(), image: imageForTab(R.image.car()), selectedImage: imageForTab(R.image.carWhite()), viewController: getInitialHomeScreen()),
-            Item(title: R.string.localizable.averages(), image: imageForTab(R.image.gear()), selectedImage: imageForTab(R.image.gearWhite()), viewController: UIViewController()),
+            Item(title: R.string.localizable.averages(), image: imageForTab(R.image.battleGray()), selectedImage: imageForTab(R.image.battleOrange()), viewController: getInitialHomeScreen()),
+            Item(title: R.string.localizable.garage(), image: imageForTab(R.image.carGray()), selectedImage: imageForTab(R.image.carOrange()), viewController: UIViewController()),
         ]
         
         self.setViewControllers(items.map { $0.viewController }, animated: false)
@@ -53,7 +53,7 @@ class MainTabBarViewController: UITabBarController {
     }
     
     final private func getInitialHomeScreen() -> UIViewController {
-        return BaseNavigationViewController(rootViewController: ViewController())
+        return BaseNavigationViewController(rootViewController: AveragesViewController())
     }
     
 }

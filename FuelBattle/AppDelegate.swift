@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        runAppearance()
+        
         mixpanel.track(
             "App Openned",
             properties: launchOptions
@@ -61,7 +63,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    // MARK: Methods
 
+    func runAppearance() {
+        let tabItemShadow = NSShadow()
+        tabItemShadow.shadowColor = UIColor.clearColor()
+        tabItemShadow.shadowOffset = CGSize.zero
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: R.color.fuelBattle.orange.color(), NSShadowAttributeName: tabItemShadow, NSFontAttributeName: UIFont.systemFontOfSize(12)], forState: .Selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: R.color.fuelBattle.gray.color(), NSShadowAttributeName: tabItemShadow, NSFontAttributeName: UIFont.systemFontOfSize(12)], forState: .Normal)
+        
+        
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics: .Default)
+    }
 
 }
 
