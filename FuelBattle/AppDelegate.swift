@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = .LightContent
         
         guard let _ = FIRAuth.auth()?.currentUser else {
-            FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in
+            FIRAuth.auth()?.signInAnonymouslyWithCompletion { (user, error) in
                 print(user, error?.localizedDescription)
             }
             return true
@@ -78,4 +78,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
