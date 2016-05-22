@@ -30,6 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             properties: launchOptions
         )
         
+        guard let _ = FIRAuth.auth()?.currentUser else {
+            FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in
+                print(user, error?.localizedDescription)
+            }
+            return true
+        }
+        
         return true
     }
 

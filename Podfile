@@ -8,6 +8,7 @@ def shared_pods
     pod 'OneSignal'
     pod 'Mixpanel'
     pod 'Firebase'
+    pod 'Firebase/Auth'
 end
 
 target 'FuelBattle' do
