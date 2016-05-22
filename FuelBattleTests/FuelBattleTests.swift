@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FuelBattle
+// @testable import FuelBattle
 
 class FuelBattleTests: XCTestCase {
     

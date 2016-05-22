@@ -18,6 +18,10 @@
 		2D2B5D4F1CF10EE000F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */; };
 		2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4E1CF10EE000F801C8 /* Key.swift */; };
 		2D2B5D541CF145B700F801C8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D531CF145B700F801C8 /* R.generated.swift */; };
+		2D2B5D591CF14A5A00F801C8 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D571CF14A5A00F801C8 /* MainTabBarViewController.swift */; };
+		2D2B5D5A1CF14A5A00F801C8 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B5D581CF14A5A00F801C8 /* BaseNavigationViewController.swift */; };
+		2D2B5D5C1CF14B8400F801C8 /* Fuel Battle.clr in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D5B1CF14B8400F801C8 /* Fuel Battle.clr */; };
+		2D2B5D611CF14F3D00F801C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D5F1CF14F3D00F801C8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D2B5D4E1CF10EE000F801C8 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		2D2B5D531CF145B700F801C8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		2D2B5D571CF14A5A00F801C8 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		2D2B5D581CF14A5A00F801C8 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		2D2B5D5B1CF14B8400F801C8 /* Fuel Battle.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fuel Battle.clr"; sourceTree = "<group>"; };
+		2D2B5D601CF14F3D00F801C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		60A095387A4D5407272B7F28 /* Pods-FuelBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5BC3B4C0857809F1DAC79C /* Pods-FuelBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBattle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBattle/Pods-FuelBattle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				2D2B5D0E1CF0F9AF00F801C8 /* AppDelegate.swift */,
+				2D2B5D5F1CF14F3D00F801C8 /* Localizable.strings */,
 				2D2B5D121CF0F9AF00F801C8 /* Main.storyboard */,
 				2D2B5D151CF0F9AF00F801C8 /* Assets.xcassets */,
 				2D2B5D171CF0F9AF00F801C8 /* LaunchScreen.storyboard */,
@@ -163,6 +172,8 @@
 		2D2B5D551CF146CE00F801C8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D2B5D571CF14A5A00F801C8 /* MainTabBarViewController.swift */,
+				2D2B5D581CF14A5A00F801C8 /* BaseNavigationViewController.swift */,
 				2D2B5D101CF0F9AF00F801C8 /* ViewController.swift */,
 			);
 			name = "View Controllers";
@@ -171,6 +182,7 @@
 		2D2B5D561CF146E400F801C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D2B5D5B1CF14B8400F801C8 /* Fuel Battle.clr */,
 				2D2B5D531CF145B700F801C8 /* R.generated.swift */,
 			);
 			name = Resources;
@@ -311,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2B5D191CF0F9AF00F801C8 /* LaunchScreen.storyboard in Resources */,
+				2D2B5D611CF14F3D00F801C8 /* Localizable.strings in Resources */,
+				2D2B5D5C1CF14B8400F801C8 /* Fuel Battle.clr in Resources */,
 				2D2B5D4F1CF10EE000F801C8 /* GoogleService-Info.plist in Resources */,
 				2D2B5D161CF0F9AF00F801C8 /* Assets.xcassets in Resources */,
 				2D2B5D141CF0F9AF00F801C8 /* Main.storyboard in Resources */,
@@ -399,8 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2B5D591CF14A5A00F801C8 /* MainTabBarViewController.swift in Sources */,
 				2D2B5D111CF0F9AF00F801C8 /* ViewController.swift in Sources */,
 				2D2B5D0F1CF0F9AF00F801C8 /* AppDelegate.swift in Sources */,
+				2D2B5D5A1CF14A5A00F801C8 /* BaseNavigationViewController.swift in Sources */,
 				2D2B5D501CF10EE000F801C8 /* Key.swift in Sources */,
 				2D2B5D541CF145B700F801C8 /* R.generated.swift in Sources */,
 			);
@@ -452,6 +468,14 @@
 				2D2B5D181CF0F9AF00F801C8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D2B5D5F1CF14F3D00F801C8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D2B5D601CF14F3D00F801C8 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
