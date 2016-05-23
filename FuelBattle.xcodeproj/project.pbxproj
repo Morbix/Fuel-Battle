@@ -34,6 +34,7 @@
 		2D2B5D761CF15B5400F801C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D4D1CF10EE000F801C8 /* GoogleService-Info.plist */; };
 		2D2B5D781CF15B5400F801C8 /* Fuel Battle.clr in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D621CF156F500F801C8 /* Fuel Battle.clr */; };
 		2D2B5D791CF15B5400F801C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2B5D121CF0F9AF00F801C8 /* Main.storyboard */; };
+		2D76D7471CF280E000CE87CF /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76D7461CF280E000CE87CF /* XCTestCaseExtension.swift */; };
 		2D8744951CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */; };
 		2D8744961CF1F0A5009F8620 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */; };
 		2D8744971CF1F0A5009F8620 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8744931CF1F0A5009F8620 /* ViewExtension.swift */; };
@@ -130,6 +131,7 @@
 		2D2B5D641CF1595C00F801C8 /* GarageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
 		2D2B5D7F1CF15B5400F801C8 /* Tailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2B5D801CF15B5400F801C8 /* FuelBattle copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FuelBattle copy-Info.plist"; path = "/Users/henriquemorbin/Projects/Morbix/FuelBattle/FuelBattle copy-Info.plist"; sourceTree = "<absolute>"; };
+		2D76D7461CF280E000CE87CF /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		2D8744921CF1F0A5009F8620 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		2D8744931CF1F0A5009F8620 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2D8744941CF1F0A5009F8620 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			children = (
 				2DC87A871CF278FD00243800 /* SnapshotHelper.swift */,
 				2D2B5D2E1CF0F9B000F801C8 /* FuelBattleUITests.swift */,
+				2D76D7461CF280E000CE87CF /* XCTestCaseExtension.swift */,
 				2D2B5D301CF0F9B000F801C8 /* Info.plist */,
 			);
 			path = FuelBattleUITests;
@@ -739,6 +742,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2B5D2F1CF0F9B000F801C8 /* FuelBattleUITests.swift in Sources */,
+				2D76D7471CF280E000CE87CF /* XCTestCaseExtension.swift in Sources */,
 				2DC87A881CF278FD00243800 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

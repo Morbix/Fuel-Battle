@@ -71,10 +71,16 @@ platform :ios do
       skip_binary_upload: true,
       skip_metadata: false,
       skip_screenshots: true,
-      app_icon: "./fastlane/metadata/iTunesArtworkWithoutAlpha.png",
+      # app_icon: "./fastlane/metadata/iTunesArtworkWithoutAlpha.png",
       # ipa: "./build/App.ipa",
       # build_number: "1"
     )
+  end
+
+  desc "Just Upload Metadata"
+  lane :just_upload_metadata_and_screenshots do
+    just_upload_metadata
+    just_upload_screenshots
   end
 
   desc "Just Upload Binary"

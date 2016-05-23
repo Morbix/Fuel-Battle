@@ -6,6 +6,11 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
+### ios generate_all_keys
+```
+fastlane ios generate_all_keys
+```
+Generate Certificates, Push Certificates and Provisionings
 ### ios generate_keys
 ```
 fastlane ios generate_keys
@@ -21,6 +26,11 @@ Just Upload Screenshots
 ### ios just_upload_metadata
 ```
 fastlane ios just_upload_metadata
+```
+Just Upload Metadata
+### ios just_upload_metadata_and_screenshots
+```
+fastlane ios just_upload_metadata_and_screenshots
 ```
 Just Upload Metadata
 ### ios just_upload_binary
@@ -45,6 +55,11 @@ Just Build
 fastlane ios run_deliver
 ```
 Run Deliver
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 
 ----
 

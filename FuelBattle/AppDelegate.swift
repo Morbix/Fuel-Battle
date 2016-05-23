@@ -19,13 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let mixpanel = Mixpanel.sharedInstanceWithToken(Key.mixpanel)
-        
-        _ = OneSignal(launchOptions: launchOptions, appId: Key.onesignal, handleNotification: nil)
+        if !isUITestMode() {
+            let mixpanel = Mixpanel.sharedInstanceWithToken(Key.mixpanel)
+            
+            mixpanel.track("App Openned", properties: launchOptions)
+            
+            _ = OneSignal(launchOptions: launchOptions, appId: Key.onesignal, handleNotification: nil)
+        }
         
         FIRApp.configure()
-        
-        mixpanel.track("App Openned", properties: launchOptions)
         
         runAppearance()
         
@@ -77,4 +79,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics: .Default)
     }
 
+    final private func isUITestMode() -> Bool {
+        let launchArguments = Process.arguments
+        for index in 1 ..< launchArguments.count {
+            let argument = launchArguments[index] as String
+            
+            if argument.compare("USE_UITEST_MODE") == NSComparisonResult.OrderedSame {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
 }

@@ -10,12 +10,6 @@ import XCTest
 
 class FuelBattleUITests: XCTestCase {
     
-    let countEqual1 = NSPredicate(format: "count == 1")
-    let exists = NSPredicate(format: "exists == 1")
-    let notExists = NSPredicate(format: "exists == 0")
-    let demoItems = ["Feed the dog", "Close windows", "Lock doors", "Turn on alarm"]
-    let timeout: NSTimeInterval = 5
-    
     override func setUp() {
         super.setUp()
         
@@ -41,8 +35,12 @@ class FuelBattleUITests: XCTestCase {
     func testExample() {
         let app = XCUIApplication()
         let navigation = app.navigationBars["Averages"]
-        expectationForPredicate(exists, evaluatedWithObject: navigation, handler: nil)
-        waitForExpectationsWithTimeout(timeout, handler: nil)
+        waitForElementExist(navigation)
+        
+        
+        let loading = app.staticTexts["Loading..."]
+        waitForElementExist(loading)
+        waitForElementNotExist(loading)
         
         snapshot("0Main")
     }
